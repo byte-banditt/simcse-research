@@ -1,0 +1,80 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:  14%|█▎        | 27/197 [00:00<00:00, 259.52it/s]Loading weights:  56%|█████▋    | 111/197 [00:00<00:00, 592.35it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 947.39it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+reference_seed101 STEP 250 DEV 0.6985931202756323
+reference_seed101 STEP 500 DEV 0.7288642069754236
+reference_seed101 STEP 750 DEV 0.7443816625102497
+reference_seed101 STEP 1000 DEV 0.7713064782204441
+reference_seed101 STEP 1250 DEV 0.804593721803307
+reference_seed101 STEP 1500 DEV 0.7892662966485644
+reference_seed101 STEP 1750 DEV 0.790188340691073
+reference_seed101 STEP 2000 DEV 0.7985644763647721
+reference_seed101 STEP 2250 DEV 0.8036835279401888
+reference_seed101 STEP 2500 DEV 0.7712347806621319
+reference_seed101 STEP 2750 DEV 0.7794474767139599
+reference_seed101 STEP 3000 DEV 0.7977686548217421
+reference_seed101 STEP 3250 DEV 0.7612211136181456
+reference_seed101 STEP 3500 DEV 0.7778811162037852
+reference_seed101 STEP 3750 DEV 0.78644288900866
+reference_seed101 STEP 4000 DEV 0.8125603785396519
+reference_seed101 STEP 4250 DEV 0.8100782967577727
+reference_seed101 STEP 4500 DEV 0.784720604903475
+reference_seed101 STEP 4750 DEV 0.806472716697778
+reference_seed101 STEP 5000 DEV 0.8207462390036041
+reference_seed101 STEP 5250 DEV 0.7878386800062568
+reference_seed101 STEP 5500 DEV 0.7948585663339743
+reference_seed101 STEP 5750 DEV 0.8226425908461045
+reference_seed101 STEP 6000 DEV 0.821762307320462
+reference_seed101 STEP 6250 DEV 0.8187702831755254
+reference_seed101 STEP 6500 DEV 0.8199658416678905
+reference_seed101 STEP 6750 DEV 0.8139190625839117
+reference_seed101 STEP 7000 DEV 0.8050041267163167
+reference_seed101 STEP 7250 DEV 0.7895322459322452
+reference_seed101 STEP 7500 DEV 0.7704766438137993
+reference_seed101 STEP 7750 DEV 0.7850238015397808
+reference_seed101 STEP 8000 DEV 0.8021501834656414
+reference_seed101 STEP 8250 DEV 0.8076087363368366
+reference_seed101 STEP 8500 DEV 0.8065367249218264
+reference_seed101 STEP 8750 DEV 0.8033089362202959
+reference_seed101 STEP 9000 DEV 0.8021398489389364
+reference_seed101 STEP 9250 DEV 0.80666001753878
+reference_seed101 STEP 9500 DEV 0.7970177592864148
+reference_seed101 STEP 9750 DEV 0.7940585419443668
+reference_seed101 STEP 10000 DEV 0.796963939673036
+reference_seed101 STEP 10250 DEV 0.7936780254836834
+reference_seed101 STEP 10500 DEV 0.7957993712536966
+reference_seed101 STEP 10750 DEV 0.7934441429443971
+reference_seed101 STEP 11000 DEV 0.7964125168763861
+reference_seed101 STEP 11250 DEV 0.7904741515735708
+reference_seed101 STEP 11500 DEV 0.7910296953642275
+reference_seed101 STEP 11750 DEV 0.7728861180992019
+reference_seed101 STEP 12000 DEV 0.7755782071432605
+reference_seed101 STEP 12250 DEV 0.7842693109981271
+reference_seed101 STEP 12500 DEV 0.7919941650767134
+reference_seed101 STEP 12750 DEV 0.7902619065781405
+reference_seed101 STEP 13000 DEV 0.7904436842836585
+reference_seed101 STEP 13250 DEV 0.7997370613359535
+reference_seed101 STEP 13500 DEV 0.8004339740962134
+reference_seed101 STEP 13750 DEV 0.799414214674759
+reference_seed101 STEP 14000 DEV 0.7977165907289189
+reference_seed101 STEP 14250 DEV 0.7965423586028865
+reference_seed101 STEP 14500 DEV 0.7961918074675816
+reference_seed101 STEP 14750 DEV 0.7940787152619831
+reference_seed101 STEP 15000 DEV 0.7933965201357738
+reference_seed101 STEP 15250 DEV 0.7929689717983934
+reference_seed101 STEP 15500 DEV 0.7929131183721829
+reference_seed101 STEP 15625 DEV 0.7929293557430187
+DONE /home/ayussh/projects/cve_rag/research/paper_repro/results/training_runs/reference_seed101

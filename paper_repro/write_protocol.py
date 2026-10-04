@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+"""Freeze a reproduction plan with measured feasibility, not claimed outcomes."""
+import hashlib
+import json
+import platform
+import subprocess
+from datetime import datetime, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / 'results/protocol_20261004.json'
+
+def main():
+    assert not OUT.exists(), 'Refusing to overwrite frozen protocol'
+    value = {'created_at_utc': datetime.now(timezone.utc).isoformat(),
+             'git_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
+             'script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+             'python': platform.python_version(), 'human_selected_paper': 'SimCSE',
+             'paper': 'https://aclanthology.org/2021.emnlp-main.552/',
+             'primary_appendix': 'https://arxiv.org/html/2104.08821v2',
+             'literature_target': {'table': 5, 'unsupervised_BERT_base_average_STS_Spearman_percent': 76.25},
+             'official_source_commit': '49fa580a853752ede55b8c76d9debf748e214d3f',
+             'seeds': [101, 202, 303], 'gpus_planned': 1, 'gpus_used_by_this_script': 0,
+             'training': {'epochs': 1, 'batch_pairs': 64, 'max_sequence_length': 32,
+                          'learning_rate': 3e-5, 'temperature': 0.05, 'amp': True,
+                          'checkpoint_selection': 'STS-B development Spearman only, every 250 steps and final step',
+                          'test_set_tuning': False},
+             'configurations': {'reference': {'weight_decay': 0.0}, 'weight_decay_ablation': {'weight_decay': 0.01}},
+             'ablation_rationale': 'Test whether parameter shrinkage changes validation-selected generalization and seed variability under the contrastive objective, while holding data and training budget fixed. No directional result assumed.',
+             'ablation_novelty_scope': 'No weight-decay sweep found in the inspected main paper, appendices A-E, or released example. This establishes absence from reported experiments, not knowledge of unpublished trials. Human verification required.',
+             'change_from_candidate_suggestion': 'Replace proposed vulnerability preprocessing extension with a controlled weight-decay training ablation, allowing independent training seeds on the same reproduction data.',
+             'evaluation': {'tasks': ['STS12', 'STS13', 'STS14', 'STS15', 'STS16', 'STSBenchmark', 'SICKRelatedness'],
+                            'protocol': 'Unsupervised CLS before MLP; Spearman all aggregation within STS year; average across tasks.',
+                            'test_gate': 'Evaluate all frozen seed checkpoints only after all training/validation selection finishes.',
+                            'interval': 'Student-t 95% confidence intervals over independent training-seed means; matched-seed differences for ablation.',
+                            'no_seed_exclusion': True},
+             'feasibility_artifact': 'memory_smoke_20261004.json',
+             'data_audit': 'data_audit_20261004.json',
+             'limitations': ['Modern runtime port differs from legacy dependencies.',
+                             'Exact overlap filtering changes training corpus; document IDs and semantic leakage audit unavailable.',
+                             'Author-hosted dataset mirror has no license card; metadata UNVERIFIED, no redistribution.',
+                             'Three seeds provide limited precision; no invented convergence/time guarantee.'],
+             'status': 'Protocol frozen before real-data training and final-test scoring; no reproduction result yet.'}
+    with OUT.open('x') as stream:
+        json.dump(value, stream, indent=2)
+        stream.write('\n')
+    print(OUT)
+
+if __name__ == '__main__':
+    main()

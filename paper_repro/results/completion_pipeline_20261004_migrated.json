@@ -1,0 +1,25 @@
+{
+  "started_at_utc": "2026-10-04T10:45:14.860842+00:00",
+  "finished_at_utc": "2026-10-04T14:39:42.747024+00:00",
+  "git_commit": "5aca6dd7db1495f87d1b9984f3f50a28cbbf84eb",
+  "script_sha256": "c887904e36321cfc069755955cf4914593b6eb7e09db7b0ae92753f368c60d6a",
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+  "training_pid": 3427,
+  "training_process_start_ticks": "459812",
+  "seed": null,
+  "gpus_used_by_supervisor": 0,
+  "stages": [
+    {
+      "script": "evaluate_reproduction.py",
+      "returncode": 0
+    },
+    {
+      "script": "build_repro_report.py",
+      "returncode": 0
+    }
+  ],
+  "status": "completed",
+  "error": null,
+  "test_set_tuning": false,
+  "log_sha256": "aa7ee535b23e749edcdebf686fce4f47eb30b050594ccdb61a0ae2aa6dd9df7c"
+}

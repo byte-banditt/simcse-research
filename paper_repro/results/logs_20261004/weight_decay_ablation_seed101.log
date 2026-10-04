@@ -1,0 +1,80 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 32/197 [00:00<00:00, 289.06it/s]Loading weights:  34%|███▎      | 66/197 [00:00<00:00, 306.13it/s]Loading weights:  49%|████▉     | 97/197 [00:00<00:00, 299.68it/s]Loading weights:  64%|██████▍   | 127/197 [00:00<00:00, 256.10it/s]Loading weights:  78%|███████▊  | 154/197 [00:00<00:00, 191.40it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 287.97it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+weight_decay_ablation_seed101 STEP 250 DEV 0.6960873036019497
+weight_decay_ablation_seed101 STEP 500 DEV 0.727888428722825
+weight_decay_ablation_seed101 STEP 750 DEV 0.753049710748479
+weight_decay_ablation_seed101 STEP 1000 DEV 0.7778043908636383
+weight_decay_ablation_seed101 STEP 1250 DEV 0.7980747689117261
+weight_decay_ablation_seed101 STEP 1500 DEV 0.7870246972388366
+weight_decay_ablation_seed101 STEP 1750 DEV 0.7865179751687906
+weight_decay_ablation_seed101 STEP 2000 DEV 0.8040776581054208
+weight_decay_ablation_seed101 STEP 2250 DEV 0.8119769902372121
+weight_decay_ablation_seed101 STEP 2500 DEV 0.7774975767935339
+weight_decay_ablation_seed101 STEP 2750 DEV 0.7920485619113579
+weight_decay_ablation_seed101 STEP 3000 DEV 0.8095477999508616
+weight_decay_ablation_seed101 STEP 3250 DEV 0.8066854428232303
+weight_decay_ablation_seed101 STEP 3500 DEV 0.808961633006153
+weight_decay_ablation_seed101 STEP 3750 DEV 0.7959274542644903
+weight_decay_ablation_seed101 STEP 4000 DEV 0.8158204733132706
+weight_decay_ablation_seed101 STEP 4250 DEV 0.8251189893522466
+weight_decay_ablation_seed101 STEP 4500 DEV 0.7992610917934226
+weight_decay_ablation_seed101 STEP 4750 DEV 0.8084492404748492
+weight_decay_ablation_seed101 STEP 5000 DEV 0.8019437093007041
+weight_decay_ablation_seed101 STEP 5250 DEV 0.797143075027976
+weight_decay_ablation_seed101 STEP 5500 DEV 0.8089017372280011
+weight_decay_ablation_seed101 STEP 5750 DEV 0.8090903252657835
+weight_decay_ablation_seed101 STEP 6000 DEV 0.8105763832308296
+weight_decay_ablation_seed101 STEP 6250 DEV 0.803737913033791
+weight_decay_ablation_seed101 STEP 6500 DEV 0.8113586890993217
+weight_decay_ablation_seed101 STEP 6750 DEV 0.8185491805478889
+weight_decay_ablation_seed101 STEP 7000 DEV 0.8050632844045198
+weight_decay_ablation_seed101 STEP 7250 DEV 0.8054944740297997
+weight_decay_ablation_seed101 STEP 7500 DEV 0.8193310753769821
+weight_decay_ablation_seed101 STEP 7750 DEV 0.7913116788412043
+weight_decay_ablation_seed101 STEP 8000 DEV 0.8015007018779359
+weight_decay_ablation_seed101 STEP 8250 DEV 0.8088602033915459
+weight_decay_ablation_seed101 STEP 8500 DEV 0.8079366155663769
+weight_decay_ablation_seed101 STEP 8750 DEV 0.799218465429524
+weight_decay_ablation_seed101 STEP 9000 DEV 0.8024483954152128
+weight_decay_ablation_seed101 STEP 9250 DEV 0.8118458182705814
+weight_decay_ablation_seed101 STEP 9500 DEV 0.8061994673988856
+weight_decay_ablation_seed101 STEP 9750 DEV 0.8057086442799208
+weight_decay_ablation_seed101 STEP 10000 DEV 0.8087610218285257
+weight_decay_ablation_seed101 STEP 10250 DEV 0.7974506741755367
+weight_decay_ablation_seed101 STEP 10500 DEV 0.7962781171356856
+weight_decay_ablation_seed101 STEP 10750 DEV 0.7950519767927647
+weight_decay_ablation_seed101 STEP 11000 DEV 0.7969562403794663
+weight_decay_ablation_seed101 STEP 11250 DEV 0.7954175838063148
+weight_decay_ablation_seed101 STEP 11500 DEV 0.7942512098592661
+weight_decay_ablation_seed101 STEP 11750 DEV 0.7890399413220379
+weight_decay_ablation_seed101 STEP 12000 DEV 0.7959992326015873
+weight_decay_ablation_seed101 STEP 12250 DEV 0.7861280898593093
+weight_decay_ablation_seed101 STEP 12500 DEV 0.7923010076294741
+weight_decay_ablation_seed101 STEP 12750 DEV 0.7922234072275947
+weight_decay_ablation_seed101 STEP 13000 DEV 0.7914997537039258
+weight_decay_ablation_seed101 STEP 13250 DEV 0.7944343293863997
+weight_decay_ablation_seed101 STEP 13500 DEV 0.8012730682690886
+weight_decay_ablation_seed101 STEP 13750 DEV 0.7994004876178691
+weight_decay_ablation_seed101 STEP 14000 DEV 0.7960734871012298
+weight_decay_ablation_seed101 STEP 14250 DEV 0.7987259940901302
+weight_decay_ablation_seed101 STEP 14500 DEV 0.7985945486294003
+weight_decay_ablation_seed101 STEP 14750 DEV 0.7986746376525709
+weight_decay_ablation_seed101 STEP 15000 DEV 0.7984912816543117
+weight_decay_ablation_seed101 STEP 15250 DEV 0.7985915165988408
+weight_decay_ablation_seed101 STEP 15500 DEV 0.7982305145706708
+weight_decay_ablation_seed101 STEP 15625 DEV 0.7983350285174821
+DONE /home/ayussh/projects/research/paper_repro/results/training_runs/weight_decay_ablation_seed101

@@ -1,0 +1,24 @@
+{
+  "created_at_utc": "2026-10-04T14:39:42.636608+00:00",
+  "git_commit": "bf33a861c32b60ca1cd4ef4ab358e57ac8dcee2a",
+  "script_sha256": "1acc7d236e1542933d7bf63ee6692e1b26492547e96a48eb83e8c0d2e743d847",
+  "input_sha256": {
+    "paper_repro/results/reproduction_test_20261004.json": "2313162d6733729c3bf527bf252bef6bea6fb08348f95ff01d4831d4d25025f9",
+    "paper_repro/results/training_grid_20261004.json": "7c8e7ef259b863ad7f3110a166884a351b19488ca81d90e5ae03c0a2194f19a3",
+    "paper_repro/results/training_runs/reference_seed101/progress.jsonl": "28de760a2618cc8cf1daa9cb7a72f2223acb2104295aa470d6c85217040845f8",
+    "paper_repro/results/training_runs/reference_seed202/progress.jsonl": "d515d8dd441f4cd56b274acce3e89ef9924c71b9bd5b96e450ca3e568f46ca5f",
+    "paper_repro/results/training_runs/reference_seed303/progress.jsonl": "aec3eb07c157802c54c29a7a259a19749f4db798d807fbd804ffbae071dbec15",
+    "paper_repro/results/training_runs/weight_decay_ablation_seed101/progress.jsonl": "18780591e7a00ff251c2d9c993547836fd3d284d0dcf1153e5f745e8fe2cb303",
+    "paper_repro/results/training_runs/weight_decay_ablation_seed202/progress.jsonl": "6e5a2d637150fe3da34ff51a9727a8a09acda91b4fa50b78344612ac8b6dc93c",
+    "paper_repro/results/training_runs/weight_decay_ablation_seed303/progress.jsonl": "6b5e2dbb76d6e7749039b0fcf1a5691b8af4c447635b720ed0870a7a2b094c3c"
+  },
+  "output_sha256": {
+    "paper_repro/REPRO_REPORT.md": "d8515e69a0ebc9d6fa743a58a214a114536a965ed2eed48c610c4e2aeaf9247f",
+    "paper_repro/results/training_curves_20261004.png": "84bb7de4b62dfb15c58fe0630c6de52f26ff275ed416fadeb7707bbacb28f98e",
+    "explainers/09_simcse_reproduction.md": "df8c20bc987a5e7f43f39e15f2a0aeb1dd333164080114c511a9edb832e8c94e"
+  },
+  "test_set_tuning": false,
+  "gpus_used": 0,
+  "seed": null,
+  "scope": "Reporting completed measurements, not another experiment."
+}

@@ -1,0 +1,6 @@
+.venv
+**/.vendor/
+**/__pycache__/
+*.pyc
+vendor/source_checkout_legacy/
+paper_repro/results/training_runs/**/*.pt

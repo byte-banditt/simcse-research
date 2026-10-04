@@ -1,0 +1,447 @@
+{
+  "created_at_utc": "2026-10-04T09:28:56.593757+00:00",
+  "git_commit": "5842205ce7c380fe344003f6cc577513877571e0",
+  "script_sha256": "0653634cad50dd9e19d40794b5fcda154a751fa752e9079fbb9cb39d09a165d0",
+  "python": "3.13.12",
+  "seed": null,
+  "gpus_used": 0,
+  "official_repo": "https://github.com/princeton-nlp/SimCSE",
+  "official_commit": "49fa580a853752ede55b8c76d9debf748e214d3f",
+  "source_path": "/home/ayussh/projects/SimCSE-repro-snapshot",
+  "files": [
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/LICENSE",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "7735771cbaf9bbaedc38935d08ae54b0f9ea0891d910bff6bb99e63e0e0dd8bc",
+      "bytes": 1094,
+      "git_blob": "61d8849400b84a681fb5a80c91469506c3874ffb"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/README.md",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "fc690420b2581b2d67d87383197a42d592a2a965e54a38275cb72116b9dcbb59",
+      "bytes": 17220,
+      "git_blob": "9dfdac6caa7ef71934dfc8fad73de24b33d9180c"
+    },
+    {
+      "file": "SentEval/LICENSE",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/LICENSE",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "0d9e8a308e5afe17319634f9d52b1ddbe3744a263c3b5c85898122029727c79a",
+      "bytes": 1529,
+      "git_blob": "51a9ed5635ba6e2af188967edd5f069fbf7ae509"
+    },
+    {
+      "file": "SentEval/senteval/__init__.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/__init__.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "6091d11d11553be555e551a1159b6d98a9e995cf1492efff6f2e55f3000990fb",
+      "bytes": 264,
+      "git_blob": "144f1668fd0b813e50207e65b995e7ab237d9052"
+    },
+    {
+      "file": "SentEval/senteval/binary.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/binary.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "652d3615ace839e1fb50f16e2f87ff90d3eec01cb5ad7c158a54647806d866bb",
+      "bytes": 3712,
+      "git_blob": "25d33b305306617cbe9899a0d4421f2d488e1c2b"
+    },
+    {
+      "file": "SentEval/senteval/engine.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/engine.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "f135e7633c9f06d5d8d7a5a081aeb2a8fff4648dbc8062c6a27150790b07edd1",
+      "bytes": 6525,
+      "git_blob": "150c5e507cd80017f0f0888a614033aa896ff2eb"
+    },
+    {
+      "file": "SentEval/senteval/mrpc.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/mrpc.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "a2e03853cee287b472e9dc32b0de681d29ca8a3e26908b78daca02f989d70a58",
+      "bytes": 4202,
+      "git_blob": "c36e7a9f6aac3b153dd20a9ac05f9b8af417747b"
+    },
+    {
+      "file": "SentEval/senteval/probing.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/probing.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "a636b2fefb042ef7c2e9e612584cfbc1b075a636e62bec243d29a7fbe341ee00",
+      "bytes": 6786,
+      "git_blob": "a6be57e2d0c6c2a3b9dea71966095e01951fe6a8"
+    },
+    {
+      "file": "SentEval/senteval/rank.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/rank.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "1c14da0ce94ca4a5ce4124e850e9be5d91a3cb9b2755aa33bb2ae8abe3cf3b78",
+      "bytes": 4643,
+      "git_blob": "7019851f90efd87f2d39b80b7a39182cafa24894"
+    },
+    {
+      "file": "SentEval/senteval/sick.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/sick.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "219bb5ca0ddc11fdcda2a5e8a408fba711529404fde83e152c0fe17d89cb90d2",
+      "bytes": 9243,
+      "git_blob": "7973fa753522336ff81181e8c92b25f6ddbd9688"
+    },
+    {
+      "file": "SentEval/senteval/snli.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/snli.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        }
+      ]
+    },
+    {
+      "file": "SentEval/senteval/sst.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/sst.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "67a6b3e644e56a960ef41f8d130a79bbd064ca62823f5198660e54c29e924322",
+      "bytes": 3946,
+      "git_blob": "f39e32540cd34a8d941304957768e711d6bdd5e4"
+    },
+    {
+      "file": "SentEval/senteval/sts.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/sts.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "22fc3fb55a6b2a19d6aa921dd945c2593162c9e48e282d662747f4d0a0d424c7",
+      "bytes": 9724,
+      "git_blob": "8c0e415ade1d2fff0952787f7246a0259b0fdab6"
+    },
+    {
+      "file": "SentEval/senteval/tools/__init__.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/tools/__init__.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "file": "SentEval/senteval/tools/classifier.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/tools/classifier.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "b4c2778bbf99078519d3f44c9e0e49b8592585cd487846927dea431533506a83",
+      "bytes": 7737,
+      "git_blob": "eb78337e2c4e2ae2c84e1778e1bbec627efcfc63"
+    },
+    {
+      "file": "SentEval/senteval/tools/ranking.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/tools/ranking.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "9d6bb85d44af57d0a3de92279b48ac61ac00710d4813d7ec4644b3451c35d18e",
+      "bytes": 15275,
+      "git_blob": "4f86856180455aa57a8bcb9af4b24bd885be3b2d"
+    },
+    {
+      "file": "SentEval/senteval/tools/relatedness.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/tools/relatedness.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "857c7c238fdc68c6ba0d513a998b191939ed703a0305e3ba8b45a1847e36fbe2",
+      "bytes": 4552,
+      "git_blob": "a080fed2e2c589853383b3715eb1f777ed3cc737"
+    },
+    {
+      "file": "SentEval/senteval/tools/validation.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/tools/validation.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        }
+      ]
+    },
+    {
+      "file": "SentEval/senteval/trec.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/trec.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "fd2474f6371d44e453939b31ac3956c8b770066acb744779afba72e24395aca5",
+      "bytes": 3565,
+      "git_blob": "d35fc2bd8cfa7981671bb12590eed32910477a3f"
+    },
+    {
+      "file": "SentEval/senteval/utils.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/SentEval/senteval/utils.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "597dd24f9f93eaffba143410a7938d331822aca993cd6be163c515ae50bd1dbb",
+      "bytes": 2713,
+      "git_blob": "425f60cdb3300c69f302e225acc625f843b08dbb"
+    },
+    {
+      "file": "data/download_nli.sh",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/data/download_nli.sh",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "6feb30ab91307460ae2358fb303ea9b536b96a062936734865eb185ec1aa07c4",
+      "bytes": 103,
+      "git_blob": "1d35ead4d9ec460eebf4473f3523ad284a2689f5"
+    },
+    {
+      "file": "data/download_wiki.sh",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/data/download_wiki.sh",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "42bfac29d691339b987d18e5749d1ecf23598bc86f5f03ca032b71b7b8a6c7c5",
+      "bytes": 106,
+      "git_blob": "244a200c8653458420bec59389ec467c638a4d74"
+    },
+    {
+      "file": "evaluation.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/evaluation.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "f8b62c8efedc0868066750ce5dfc0b4c3f12b29781624769917ed29d2bbd5e24",
+      "bytes": 8127,
+      "git_blob": "d0858980a78ea03c2d481ff0bc22a0fb2e2d1976"
+    },
+    {
+      "file": "requirements.txt",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/requirements.txt",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "f7f7f7527eb0eb4fd39b10738f738b6920eb19e9ac80ce18f67d6f496567d12c",
+      "bytes": 91,
+      "git_blob": "c09c258d8c5b23cfa46bdc691276f9bb1ccfc7d2"
+    },
+    {
+      "file": "run_unsup_example.sh",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/run_unsup_example.sh",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "b2c1a6f4960fcd4419a3626f0fcc8b5d40b6dc0b7459c064891abbb9a4989d0c",
+      "bytes": 794,
+      "git_blob": "28086890689b43c82fd5188041ba9de5aa5500af"
+    },
+    {
+      "file": "simcse/__init__.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/simcse/__init__.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "2097983559a56e9c331220d4d068b876eef3879a0186562f4ae067767991f116",
+      "bytes": 25,
+      "git_blob": "4452499d325c7c5f4e80edf32f781e96cc32575a"
+    },
+    {
+      "file": "simcse/models.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/simcse/models.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "4f415ed61aa103eeae95118c1de44d964a94d83cb70b7adf5d743ba4420c67ce",
+      "bytes": 13807,
+      "git_blob": "b179687a89eb44e9ed4cdf2de766785de10cb957"
+    },
+    {
+      "file": "simcse/tool.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/simcse/tool.py",
+      "attempts": [
+        {
+          "success": true
+        }
+      ],
+      "sha256": "dd1b1882381154030b8daf36d8846c2f8981303a3b5cfd2e79c2997bac67e0d8",
+      "bytes": 12092,
+      "git_blob": "53ef935eb1e7f10230da5202e46eada9fddb892f"
+    },
+    {
+      "file": "simcse/trainers.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/simcse/trainers.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "9f66dae69dadc747f7b92ba32a83af488c32d995105008ca57288ea1c6e28865",
+      "bytes": 25360,
+      "git_blob": "b632ed377903d89f60e0386b18c1529039582f1c"
+    },
+    {
+      "file": "train.py",
+      "url": "https://raw.githubusercontent.com/princeton-nlp/SimCSE/49fa580a853752ede55b8c76d9debf748e214d3f/train.py",
+      "attempts": [
+        {
+          "success": false,
+          "error": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+        },
+        {
+          "success": true
+        }
+      ],
+      "sha256": "4b29ea138926af67e436a3ab46b0a449802ccd7c318cea13458ec5784b9b0fbd",
+      "bytes": 24040,
+      "git_blob": "1ca634b8684a0c56a733cb489710381f519602a3"
+    }
+  ],
+  "complete": false,
+  "prior_attempts": [
+    "Full clone: connection reset, early EOF.",
+    "Filtered clone: commit/tree obtained; checkout timed out.",
+    "Pinned complete tar archive: timed out; partial archive unused."
+  ]
+}

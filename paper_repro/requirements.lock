@@ -1,0 +1,10 @@
+# Measured local runtime; legacy-version deviation disclosed.
+torch==2.14.0+cu130
+transformers==5.17.0
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+huggingface-hub==1.32.0
+tokenizers==0.23.2
+safetensors==0.8.0
+matplotlib==3.11.2

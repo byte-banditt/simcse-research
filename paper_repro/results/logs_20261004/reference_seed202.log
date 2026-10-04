@@ -1,0 +1,80 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:  20%|█▉        | 39/197 [00:00<00:00, 377.55it/s]Loading weights:  39%|███▉      | 77/197 [00:00<00:00, 362.65it/s]Loading weights:  59%|█████▉    | 116/197 [00:00<00:00, 370.69it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 523.14it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+reference_seed202 STEP 250 DEV 0.6135831310799137
+reference_seed202 STEP 500 DEV 0.6741432902570172
+reference_seed202 STEP 750 DEV 0.7272157536387126
+reference_seed202 STEP 1000 DEV 0.7517589807621179
+reference_seed202 STEP 1250 DEV 0.7935149027796432
+reference_seed202 STEP 1500 DEV 0.7972392487629136
+reference_seed202 STEP 1750 DEV 0.812414152460222
+reference_seed202 STEP 2000 DEV 0.8139987069331145
+reference_seed202 STEP 2250 DEV 0.815583553946118
+reference_seed202 STEP 2500 DEV 0.8221988620510322
+reference_seed202 STEP 2750 DEV 0.8153833128696214
+reference_seed202 STEP 3000 DEV 0.8002495568875057
+reference_seed202 STEP 3250 DEV 0.8142161686608339
+reference_seed202 STEP 3500 DEV 0.8019983862078596
+reference_seed202 STEP 3750 DEV 0.7662527985807543
+reference_seed202 STEP 4000 DEV 0.7696882404503153
+reference_seed202 STEP 4250 DEV 0.7755144284292182
+reference_seed202 STEP 4500 DEV 0.7914217678850518
+reference_seed202 STEP 4750 DEV 0.8024471000406533
+reference_seed202 STEP 5000 DEV 0.8093655549930889
+reference_seed202 STEP 5250 DEV 0.8037132834740698
+reference_seed202 STEP 5500 DEV 0.8007050483046431
+reference_seed202 STEP 5750 DEV 0.767217611315596
+reference_seed202 STEP 6000 DEV 0.780229590046191
+reference_seed202 STEP 6250 DEV 0.7805973732181515
+reference_seed202 STEP 6500 DEV 0.7898877177078092
+reference_seed202 STEP 6750 DEV 0.7942494111093195
+reference_seed202 STEP 7000 DEV 0.7919284237424568
+reference_seed202 STEP 7250 DEV 0.8050654481070786
+reference_seed202 STEP 7500 DEV 0.7575643163975262
+reference_seed202 STEP 7750 DEV 0.778367802284483
+reference_seed202 STEP 8000 DEV 0.7752133979723637
+reference_seed202 STEP 8250 DEV 0.782069902008937
+reference_seed202 STEP 8500 DEV 0.8035723606036846
+reference_seed202 STEP 8750 DEV 0.8202472824141459
+reference_seed202 STEP 9000 DEV 0.8203407138127148
+reference_seed202 STEP 9250 DEV 0.8193586188289106
+reference_seed202 STEP 9500 DEV 0.8141067023931193
+reference_seed202 STEP 9750 DEV 0.7976773113424162
+reference_seed202 STEP 10000 DEV 0.8143304989767394
+reference_seed202 STEP 10250 DEV 0.8119622784833002
+reference_seed202 STEP 10500 DEV 0.8118695435439404
+reference_seed202 STEP 10750 DEV 0.7968185047006857
+reference_seed202 STEP 11000 DEV 0.7895393713820025
+reference_seed202 STEP 11250 DEV 0.7939318575093894
+reference_seed202 STEP 11500 DEV 0.7950065230247823
+reference_seed202 STEP 11750 DEV 0.7905076957066632
+reference_seed202 STEP 12000 DEV 0.7923430621143338
+reference_seed202 STEP 12250 DEV 0.7854928338919348
+reference_seed202 STEP 12500 DEV 0.7920782398677555
+reference_seed202 STEP 12750 DEV 0.7936573793777553
+reference_seed202 STEP 13000 DEV 0.794029429824658
+reference_seed202 STEP 13250 DEV 0.7937740043817092
+reference_seed202 STEP 13500 DEV 0.7848073949988799
+reference_seed202 STEP 13750 DEV 0.7827155857279776
+reference_seed202 STEP 14000 DEV 0.7840989201185921
+reference_seed202 STEP 14250 DEV 0.7863481487298398
+reference_seed202 STEP 14500 DEV 0.7881771844988822
+reference_seed202 STEP 14750 DEV 0.7868741675854215
+reference_seed202 STEP 15000 DEV 0.7879182038931106
+reference_seed202 STEP 15250 DEV 0.7875132872435665
+reference_seed202 STEP 15500 DEV 0.7873089988463573
+reference_seed202 STEP 15625 DEV 0.7874128939358499
+DONE /home/ayussh/projects/cve_rag/research/paper_repro/results/training_runs/reference_seed202

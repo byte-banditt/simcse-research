@@ -1,0 +1,80 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   7%|▋         | 14/197 [00:00<00:02, 64.35it/s]Loading weights:  11%|█         | 21/197 [00:00<00:03, 52.85it/s]Loading weights:  14%|█▎        | 27/197 [00:00<00:03, 46.50it/s]Loading weights:  17%|█▋        | 34/197 [00:00<00:03, 47.26it/s]Loading weights:  20%|█▉        | 39/197 [00:00<00:04, 37.23it/s]Loading weights:  25%|██▌       | 50/197 [00:01<00:02, 51.17it/s]Loading weights:  28%|██▊       | 56/197 [00:01<00:02, 51.45it/s]Loading weights:  36%|███▌      | 71/197 [00:01<00:01, 66.98it/s]Loading weights:  41%|████      | 81/197 [00:01<00:01, 68.79it/s]Loading weights:  47%|████▋     | 93/197 [00:01<00:01, 70.86it/s]Loading weights:  52%|█████▏    | 103/197 [00:01<00:01, 76.95it/s]Loading weights:  59%|█████▉    | 117/197 [00:01<00:00, 87.96it/s]Loading weights:  64%|██████▍   | 127/197 [00:01<00:00, 87.08it/s]Loading weights: 100%|██████████| 197/197 [00:01<00:00, 102.30it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+reference_seed303 STEP 250 DEV 0.6859860991310828
+reference_seed303 STEP 500 DEV 0.7278574115548372
+reference_seed303 STEP 750 DEV 0.762201453049621
+reference_seed303 STEP 1000 DEV 0.7820506518011457
+reference_seed303 STEP 1250 DEV 0.7773870998490634
+reference_seed303 STEP 1500 DEV 0.7360171514071681
+reference_seed303 STEP 1750 DEV 0.7654874848860238
+reference_seed303 STEP 2000 DEV 0.7640959596951187
+reference_seed303 STEP 2250 DEV 0.7684368783778848
+reference_seed303 STEP 2500 DEV 0.7792818651928677
+reference_seed303 STEP 2750 DEV 0.7944249763606223
+reference_seed303 STEP 3000 DEV 0.7820486297522828
+reference_seed303 STEP 3250 DEV 0.7773737197479221
+reference_seed303 STEP 3500 DEV 0.7930453828830861
+reference_seed303 STEP 3750 DEV 0.7875973122125852
+reference_seed303 STEP 4000 DEV 0.7826553799764822
+reference_seed303 STEP 4250 DEV 0.793420530828479
+reference_seed303 STEP 4500 DEV 0.7859993128891483
+reference_seed303 STEP 4750 DEV 0.8009845136220543
+reference_seed303 STEP 5000 DEV 0.7970249272596083
+reference_seed303 STEP 5250 DEV 0.7942956310757453
+reference_seed303 STEP 5500 DEV 0.7955577404865438
+reference_seed303 STEP 5750 DEV 0.7960402931281444
+reference_seed303 STEP 6000 DEV 0.7863766772192532
+reference_seed303 STEP 6250 DEV 0.7837347999535741
+reference_seed303 STEP 6500 DEV 0.8017318301511136
+reference_seed303 STEP 6750 DEV 0.7721625553229267
+reference_seed303 STEP 7000 DEV 0.7870002432952033
+reference_seed303 STEP 7250 DEV 0.7967261121067736
+reference_seed303 STEP 7500 DEV 0.7879891630168134
+reference_seed303 STEP 7750 DEV 0.7924772294665914
+reference_seed303 STEP 8000 DEV 0.7860106207261334
+reference_seed303 STEP 8250 DEV 0.7835636041060449
+reference_seed303 STEP 8500 DEV 0.7887014133197329
+reference_seed303 STEP 8750 DEV 0.7863546883885386
+reference_seed303 STEP 9000 DEV 0.7729490291745902
+reference_seed303 STEP 9250 DEV 0.7786799939785884
+reference_seed303 STEP 9500 DEV 0.8094973077530521
+reference_seed303 STEP 9750 DEV 0.804002765879993
+reference_seed303 STEP 10000 DEV 0.8043644885492289
+reference_seed303 STEP 10250 DEV 0.7957997662717627
+reference_seed303 STEP 10500 DEV 0.796260689369608
+reference_seed303 STEP 10750 DEV 0.7993122509021715
+reference_seed303 STEP 11000 DEV 0.7881729887664491
+reference_seed303 STEP 11250 DEV 0.7940672615174239
+reference_seed303 STEP 11500 DEV 0.8041501510380111
+reference_seed303 STEP 11750 DEV 0.8049686996456049
+reference_seed303 STEP 12000 DEV 0.8046462125938101
+reference_seed303 STEP 12250 DEV 0.7960769888830058
+reference_seed303 STEP 12500 DEV 0.7992970071194097
+reference_seed303 STEP 12750 DEV 0.7935412319792845
+reference_seed303 STEP 13000 DEV 0.7964785827582191
+reference_seed303 STEP 13250 DEV 0.7984715129574127
+reference_seed303 STEP 13500 DEV 0.8026880994934692
+reference_seed303 STEP 13750 DEV 0.8039735574997718
+reference_seed303 STEP 14000 DEV 0.8035747627405737
+reference_seed303 STEP 14250 DEV 0.8023150232605394
+reference_seed303 STEP 14500 DEV 0.8032531361840962
+reference_seed303 STEP 14750 DEV 0.8024728810208644
+reference_seed303 STEP 15000 DEV 0.8030656869423228
+reference_seed303 STEP 15250 DEV 0.8025172630767927
+reference_seed303 STEP 15500 DEV 0.8021245428785515
+reference_seed303 STEP 15625 DEV 0.8021817439856422
+DONE /home/ayussh/projects/research/paper_repro/results/training_runs/reference_seed303

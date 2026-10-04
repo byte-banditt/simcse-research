@@ -1,0 +1,104 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   8%|▊         | 16/197 [00:00<00:01, 158.25it/s]Loading weights:  16%|█▌        | 32/197 [00:00<00:01, 126.32it/s]Loading weights:  26%|██▋       | 52/197 [00:00<00:00, 148.33it/s]Loading weights:  45%|████▌     | 89/197 [00:00<00:00, 223.26it/s]Loading weights:  69%|██████▊   | 135/197 [00:00<00:00, 301.45it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 346.89it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+EVALUATED reference 101 74.64730011707591
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   4%|▍         | 8/197 [00:00<00:02, 77.82it/s]Loading weights:  11%|█         | 22/197 [00:00<00:01, 110.03it/s]Loading weights:  18%|█▊        | 36/197 [00:00<00:01, 115.46it/s]Loading weights:  32%|███▏      | 63/197 [00:00<00:00, 173.07it/s]Loading weights:  48%|████▊     | 95/197 [00:00<00:00, 214.39it/s]Loading weights:  64%|██████▍   | 126/197 [00:00<00:00, 239.88it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 282.30it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+EVALUATED reference 202 76.08078945315688
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   1%|          | 1/197 [00:00<00:37,  5.21it/s]Loading weights:  11%|█         | 21/197 [00:00<00:02, 66.99it/s]Loading weights:  27%|██▋       | 53/197 [00:00<00:00, 145.77it/s]Loading weights:  46%|████▌     | 91/197 [00:00<00:00, 214.53it/s]Loading weights:  63%|██████▎   | 124/197 [00:00<00:00, 237.59it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 265.21it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+EVALUATED reference 303 75.28822836076783
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   6%|▌         | 12/197 [00:00<00:01, 106.71it/s]Loading weights:  79%|███████▊  | 155/197 [00:00<00:00, 845.10it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 894.00it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+EVALUATED weight_decay_ablation 101 75.88519673755204
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 56/197 [00:00<00:00, 413.56it/s]Loading weights:  50%|████▉     | 98/197 [00:00<00:00, 119.66it/s]Loading weights:  61%|██████    | 120/197 [00:00<00:00, 107.17it/s]Loading weights:  69%|██████▉   | 136/197 [00:01<00:00, 101.19it/s]Loading weights:  76%|███████▌  | 149/197 [00:01<00:00, 102.27it/s]Loading weights: 100%|██████████| 197/197 [00:01<00:00, 148.14it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+EVALUATED weight_decay_ablation 202 76.36687934768823
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights:   8%|▊         | 16/197 [00:00<00:01, 145.94it/s]Loading weights:  16%|█▌        | 31/197 [00:00<00:01, 116.70it/s]Loading weights:  22%|██▏       | 43/197 [00:00<00:01, 108.42it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 454.56it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /home/ayussh/models/simcse_bert_base
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+bert.pooler.dense.weight                   | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+bert.pooler.dense.bias                     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+EVALUATED weight_decay_ablation 303 76.25656744996661
+WROTE /home/ayussh/projects/research/paper_repro/results/reproduction_test_20261004.json
+WROTE /home/ayussh/projects/research/paper_repro/REPRO_REPORT.md /home/ayussh/projects/research/paper_repro/results/report_audit_20261004.json

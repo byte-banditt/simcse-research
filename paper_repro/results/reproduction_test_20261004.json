@@ -1,0 +1,166 @@
+{
+  "created_at_utc": "2026-10-04T14:39:28.686899+00:00",
+  "git_commit": "bf33a861c32b60ca1cd4ef4ab358e57ac8dcee2a",
+  "script_sha256": "f6b6a7963b5901ffa6ae27249ae1339c986caa971dc4ebbdd947b8570aca8213",
+  "runtime_sha256": "c14604b95a09b3e309d6c22a0825f0e574a5945b0587c2f5a624b79cae67c6f4",
+  "grid_sha256": "7c8e7ef259b863ad7f3110a166884a351b19488ca81d90e5ae03c0a2194f19a3",
+  "protocol_sha256": "095739a0c394ea8d3ebcc0277aec2202947f6db0569d92d0a9f46c06109243d8",
+  "python": "3.13.12",
+  "versions": {
+    "torch": "2.14.0",
+    "transformers": "5.17.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1"
+  },
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "gpus_used": 1,
+    "cuda": "13.0"
+  },
+  "official_source_audit": "official_source_audit_retry1_20261004.json",
+  "training_seeds": [
+    101,
+    202,
+    303
+  ],
+  "literature_target": {
+    "table": 5,
+    "unsupervised_BERT_base_average_STS_Spearman_percent": 76.25
+  },
+  "raw": {
+    "reference": [
+      {
+        "seed": 101,
+        "training_git_commit": "15ed7f381ff6592dcafb28a772ea72e5eef80a71",
+        "checkpoint_sha256": "50d5f6ad7378f961c2afaf3b2530cca6e343a9239f43f39043d9e9f578af7c3e",
+        "task_spearman_percent": {
+          "STS12": 66.27188983605102,
+          "STS13": 78.77397687065594,
+          "STS14": 71.53802939017457,
+          "STS15": 80.93501002020521,
+          "STS16": 77.97843805186527,
+          "STSBenchmark": 76.44446975294733,
+          "SICKRelatedness": 70.58928689763209
+        },
+        "average_spearman_percent": 74.64730011707591,
+        "official_printer_average_percent": 74.64714285714285
+      },
+      {
+        "seed": 202,
+        "training_git_commit": "d054e96d8dcb6ddc68254344e1443e4209a0d49a",
+        "checkpoint_sha256": "a7370c6162ba49318645a80ab47946da49f09b35297147018aa112cf6ef33d9b",
+        "task_spearman_percent": {
+          "STS12": 67.6097603366134,
+          "STS13": 82.71368279111626,
+          "STS14": 73.85978260995944,
+          "STS15": 81.45511382249215,
+          "STS16": 78.40816943934962,
+          "STSBenchmark": 77.1631681271999,
+          "SICKRelatedness": 71.3558490453674
+        },
+        "average_spearman_percent": 76.08078945315688,
+        "official_printer_average_percent": 76.08142857142856
+      },
+      {
+        "seed": 303,
+        "training_git_commit": "bf33a861c32b60ca1cd4ef4ab358e57ac8dcee2a",
+        "checkpoint_sha256": "5367a158ad997bf283aaf69d80e69c5afc86f11c6d8f07c174cdc6a1a76341db",
+        "task_spearman_percent": {
+          "STS12": 67.75580861210891,
+          "STS13": 81.77875395820637,
+          "STS14": 73.1167664743035,
+          "STS15": 80.73578144971553,
+          "STS16": 77.31666701654962,
+          "STSBenchmark": 75.52834451706802,
+          "SICKRelatedness": 70.78547649742289
+        },
+        "average_spearman_percent": 75.28822836076783,
+        "official_printer_average_percent": 75.29142857142857
+      }
+    ],
+    "weight_decay_ablation": [
+      {
+        "seed": 101,
+        "training_git_commit": "bf33a861c32b60ca1cd4ef4ab358e57ac8dcee2a",
+        "checkpoint_sha256": "7071a35bf3bb744497b3bca5e810732907d71024c4536b7530dfde15522cc3d2",
+        "task_spearman_percent": {
+          "STS12": 68.55430918311171,
+          "STS13": 80.58159707193533,
+          "STS14": 73.62965541127265,
+          "STS15": 81.70119857972502,
+          "STS16": 78.39037456819115,
+          "STSBenchmark": 77.33273352894287,
+          "SICKRelatedness": 71.00650881968555
+        },
+        "average_spearman_percent": 75.88519673755204,
+        "official_printer_average_percent": 75.88428571428571
+      },
+      {
+        "seed": 202,
+        "training_git_commit": "bf33a861c32b60ca1cd4ef4ab358e57ac8dcee2a",
+        "checkpoint_sha256": "e767750a51b938a0edf7aa002da27a296bc5d44c2dba160a654def405ff09fb1",
+        "task_spearman_percent": {
+          "STS12": 69.35389260160943,
+          "STS13": 82.65219919817501,
+          "STS14": 74.17376112222908,
+          "STS15": 81.26865206970757,
+          "STS16": 78.6037898381711,
+          "STSBenchmark": 77.66396480015013,
+          "SICKRelatedness": 70.85189580377528
+        },
+        "average_spearman_percent": 76.36687934768823,
+        "official_printer_average_percent": 76.36428571428571
+      },
+      {
+        "seed": 303,
+        "training_git_commit": "bf33a861c32b60ca1cd4ef4ab358e57ac8dcee2a",
+        "checkpoint_sha256": "898a13033aea724cea74311d90bba8d8702277be13e390ee49030892a2f33377",
+        "task_spearman_percent": {
+          "STS12": 68.93270402821031,
+          "STS13": 82.37377118385857,
+          "STS14": 74.23736398821832,
+          "STS15": 80.58886088891278,
+          "STS16": 78.90050204358619,
+          "STSBenchmark": 77.29536119335731,
+          "SICKRelatedness": 71.46740882362285
+        },
+        "average_spearman_percent": 76.25656744996661,
+        "official_printer_average_percent": 76.25714285714285
+      }
+    ]
+  },
+  "summaries": {
+    "reference": {
+      "mean": 75.33877264366687,
+      "t95_ci": [
+        73.55496290387033,
+        77.12258238346341
+      ],
+      "seeds": 3
+    },
+    "weight_decay_ablation": {
+      "mean": 76.16954784506896,
+      "t95_ci": [
+        75.54265935041732,
+        76.7964363397206
+      ],
+      "seeds": 3
+    }
+  },
+  "paired_ablation_minus_reference": {
+    "mean": 0.8307752014020812,
+    "t95_ci": [
+      -0.3879136910416324,
+      2.0494640938457946
+    ],
+    "seeds": 3
+  },
+  "reference_minus_paper_percentage_points": -0.9112273563331286,
+  "test_set_tuning": false,
+  "limitations": [
+    "Three training seeds, t interval approximate; original runtime and exact corpus differ.",
+    "Paper headline is an author-reported single-model result, not a matched seed mean.",
+    "Keep current tests fixed; do not tune to close a reported gap."
+  ]
+}

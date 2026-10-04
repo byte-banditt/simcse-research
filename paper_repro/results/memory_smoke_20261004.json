@@ -1,0 +1,89 @@
+{
+  "created_at_utc": "2026-10-04T09:19:18.663865+00:00",
+  "git_commit": "423071028b16d1a191199f91068267cfbf4b09ce",
+  "script_sha256": "9a09c355f750630766fefcc9eb9d6124f6df4ec875ed88b407a47220cb1ff1eb",
+  "scope": "Synthetic random-weight/random-token memory feasibility only. No trained result or real-data throughput.",
+  "seed": 101,
+  "python": "3.13.12",
+  "torch": "2.14.0+cu130",
+  "transformers": "5.17.0",
+  "hardware": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "gpus_used": 1,
+  "cuda": "13.0",
+  "batch_pairs": 64,
+  "sequence_length": 32,
+  "bert_config": {
+    "transformers_version": "5.17.0",
+    "architectures": null,
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": null,
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "vocab_size": 30522,
+    "hidden_size": 768,
+    "num_hidden_layers": 12,
+    "num_attention_heads": 12,
+    "intermediate_size": 3072,
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.1,
+    "attention_probs_dropout_prob": 0.1,
+    "max_position_embeddings": 512,
+    "type_vocab_size": 2,
+    "initializer_range": 0.02,
+    "layer_norm_eps": 1e-12,
+    "pad_token_id": 0,
+    "use_cache": true,
+    "classifier_dropout": null,
+    "is_decoder": false,
+    "add_cross_attention": false,
+    "bos_token_id": null,
+    "eos_token_id": null,
+    "tie_word_embeddings": true,
+    "_name_or_path": "",
+    "model_type": "bert",
+    "output_attentions": false
+  },
+  "parameters": 109482240,
+  "max_memory_allocated_bytes": 3222275072,
+  "max_memory_reserved_bytes": 3447717888,
+  "amp": true,
+  "steps": [
+    {
+      "step": 0,
+      "seconds": 2.819289984000079,
+      "loss": 1.4154911041259766
+    },
+    {
+      "step": 1,
+      "seconds": 0.1640868990002673,
+      "loss": 0.14726383984088898
+    },
+    {
+      "step": 2,
+      "seconds": 0.16319514199994956,
+      "loss": 0.021991144865751266
+    },
+    {
+      "step": 3,
+      "seconds": 0.1628190429996721,
+      "loss": 0.009405148215591908
+    },
+    {
+      "step": 4,
+      "seconds": 0.16248984000003475,
+      "loss": 0.0061753359623253345
+    }
+  ],
+  "training_data_used": false,
+  "test_data_used": false
+}

@@ -1,0 +1,2 @@
+__pycache__/
+results/training_runs/**/*.pt
