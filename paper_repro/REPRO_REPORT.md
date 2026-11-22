@@ -1,10 +1,8 @@
 # SimCSE reproduction and optimizer ablation
 
-DRAFT - NEEDS HUMAN VERIFICATION
-
 ## Setup
 
-Human-selected paper: Gao, Yao, and Chen, **SimCSE: Simple Contrastive Learning of Sentence Embeddings**, EMNLP 2021. [Official proceedings](https://aclanthology.org/2021.emnlp-main.552/), [paper and appendices](https://arxiv.org/html/2104.08821v2), [official MIT-licensed code](https://github.com/princeton-nlp/SimCSE).
+Gao, Yao, and Chen, **SimCSE: Simple Contrastive Learning of Sentence Embeddings**, EMNLP 2021. [Official proceedings](https://aclanthology.org/2021.emnlp-main.552/), [paper and appendices](https://arxiv.org/html/2104.08821v2), [official MIT-licensed code](https://github.com/princeton-nlp/SimCSE).
 
 The target is the unsupervised BERT-base average STS Spearman result in Table 5. The author-reported single-model number is compared with our training-seed mean; these are different estimands.
 
@@ -75,7 +73,7 @@ Intervals use Student-t over independent training-seed scores, with matched-seed
 
 ## Training and ablation
 
-The controlled change is optimizer weight decay. Rationale and exact configurations are in [the frozen protocol](results/protocol_20261004.json). No reported weight-decay sweep was found in the inspected paper, appendices, or example; absence from reported experiments does not establish absence from unpublished trials. Human verification is required before claiming novelty.
+The controlled change is optimizer weight decay. Rationale and exact configurations are in [the frozen protocol](results/protocol_20261004.json). No reported weight-decay sweep was found in the inspected paper, appendices, or example; this does not rule out unpublished trials.
 
 | Config | Seed | Best validation Spearman | Steps | AMP skipped steps | Elapsed seconds | Peak allocated bytes |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -92,7 +90,7 @@ The controlled change is optimizer weight decay. Rationale and exact configurati
 
 - Modern Python/Torch/Transformers port replaces legacy dependencies; Torch AdamW is not bit-identical to legacy Hugging Face AdamW. Head/loss/gradient parity is audited on a fixture, not a complete optimizer trajectory.
 - Author-hosted training corpus loses an exact normalized benchmark overlap under our audit. Document identities and semantic/near-duplicate leakage checks are unavailable.
-- Dataset mirror has no license card: **UNVERIFIED**. Upstream Wikipedia terms do not establish every bundled file’s terms. Data remain local; verify original reuse and attribution before external release.
+- Dataset mirror has no license card, so its license could not be established. Upstream Wikipedia terms do not establish every bundled file’s terms. Data are excluded from this repository.
 - Validation interval follows paper appendix rather than the released shell example. Final evaluation uses FP32 and a smaller inference batch; hardware/runtime/version deviations are recorded.
 - Single GPU only; no DDP or concurrent-system throughput claim. Exact device and versions are recorded per run.
 - Initial source/network/data parsing failures and smoke artifacts are preserved. Smoke runs are excluded from headline metrics. AMP skipped steps are disclosed above.

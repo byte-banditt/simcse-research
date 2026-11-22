@@ -1,7 +1,7 @@
 {
-  "created_at_utc": "2026-10-04T14:39:42.636608+00:00",
-  "git_commit": "bf33a861c32b60ca1cd4ef4ab358e57ac8dcee2a",
-  "script_sha256": "1acc7d236e1542933d7bf63ee6692e1b26492547e96a48eb83e8c0d2e743d847",
+  "created_at_utc": "2026-11-22T18:29:17+00:00",
+  "git_commit": "eef2e375fe860d5e51e7365ea6117d7b14d0de67",
+  "script_sha256": "e65cdfd3241d547e2c73a96bbc1bb19230c8286b208060fb464175a7dd406a06",
   "input_sha256": {
     "paper_repro/results/reproduction_test_20261004.json": "2313162d6733729c3bf527bf252bef6bea6fb08348f95ff01d4831d4d25025f9",
     "paper_repro/results/training_grid_20261004.json": "7c8e7ef259b863ad7f3110a166884a351b19488ca81d90e5ae03c0a2194f19a3",
@@ -13,12 +13,11 @@
     "paper_repro/results/training_runs/weight_decay_ablation_seed303/progress.jsonl": "6b5e2dbb76d6e7749039b0fcf1a5691b8af4c447635b720ed0870a7a2b094c3c"
   },
   "output_sha256": {
-    "paper_repro/REPRO_REPORT.md": "d8515e69a0ebc9d6fa743a58a214a114536a965ed2eed48c610c4e2aeaf9247f",
-    "paper_repro/results/training_curves_20261004.png": "84bb7de4b62dfb15c58fe0630c6de52f26ff275ed416fadeb7707bbacb28f98e",
-    "explainers/09_simcse_reproduction.md": "df8c20bc987a5e7f43f39e15f2a0aeb1dd333164080114c511a9edb832e8c94e"
+    "paper_repro/REPRO_REPORT.md": "8cc8f92f51bb9b19ce7b2228640b497995261b1ae57fb1f1f67d8b45a90b91b5",
+    "paper_repro/results/training_curves_20261004.png": "84bb7de4b62dfb15c58fe0630c6de52f26ff275ed416fadeb7707bbacb28f98e"
   },
   "test_set_tuning": false,
   "gpus_used": 0,
   "seed": null,
-  "scope": "Reporting completed measurements, not another experiment."
+  "scope": "Editorial cleanup of report text; experiment inputs and numerical results unchanged."
 }

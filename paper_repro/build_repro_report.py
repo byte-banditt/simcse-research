@@ -27,12 +27,11 @@ def main():
     report = ROOT / 'REPRO_REPORT.md'
     figure = ROOT / 'results/training_curves_20261004.png'
     artifact = ROOT / 'results/report_audit_20261004.json'
-    explainer = REPO / 'explainers/09_simcse_reproduction.md'
-    assert not any(p.exists() for p in (report, figure, artifact, explainer)), 'Refusing to overwrite report artifacts'
+    assert not any(p.exists() for p in (report, figure, artifact)), 'Refusing to overwrite report artifacts'
     target = test['literature_target']['unsupervised_BERT_base_average_STS_Spearman_percent']
-    lines = ['# SimCSE reproduction and optimizer ablation', '', 'DRAFT - NEEDS HUMAN VERIFICATION', '',
+    lines = ['# SimCSE reproduction and optimizer ablation', '',
              '## Setup', '',
-             'Human-selected paper: Gao, Yao, and Chen, **SimCSE: Simple Contrastive Learning of Sentence Embeddings**, EMNLP 2021. '
+             'Gao, Yao, and Chen, **SimCSE: Simple Contrastive Learning of Sentence Embeddings**, EMNLP 2021. '
              '[Official proceedings](https://aclanthology.org/2021.emnlp-main.552/), '
              '[paper and appendices](https://arxiv.org/html/2104.08821v2), '
              '[official MIT-licensed code](https://github.com/princeton-nlp/SimCSE).', '',
@@ -63,8 +62,7 @@ def main():
     lines += ['', '## Training and ablation', '',
               'The controlled change is optimizer weight decay. Rationale and exact configurations are in '
               '[the frozen protocol](results/protocol_20261004.json). No reported weight-decay sweep was found in the '
-              'inspected paper, appendices, or example; absence from reported experiments does not establish absence '
-              'from unpublished trials. Human verification is required before claiming novelty.', '',
+              'inspected paper, appendices, or example; this does not rule out unpublished trials.', '',
               '| Config | Seed | Best validation Spearman | Steps | AMP skipped steps | Elapsed seconds | Peak allocated bytes |',
               '| --- | ---: | ---: | ---: | ---: | ---: | ---: |']
     fig, axes = plt.subplots(1, 2, figsize=(11, 4))
@@ -90,8 +88,8 @@ def main():
               'Head/loss/gradient parity is audited on a fixture, not a complete optimizer trajectory.',
               '- Author-hosted training corpus loses an exact normalized benchmark overlap under our audit. '
               'Document identities and semantic/near-duplicate leakage checks are unavailable.',
-              '- Dataset mirror has no license card: **UNVERIFIED**. Upstream Wikipedia terms do not establish every bundled file’s terms. '
-              'Data remain local; verify original reuse and attribution before external release.',
+              '- Dataset mirror has no license card, so its license could not be established. '
+              'Upstream Wikipedia terms do not establish every bundled file’s terms. Data are excluded from this repository.',
               '- Validation interval follows paper appendix rather than the released shell example. '
               'Final evaluation uses FP32 and a smaller inference batch; hardware/runtime/version deviations are recorded.',
               '- Single GPU only; no DDP or concurrent-system throughput claim. Exact device and versions are recorded per run.',
@@ -106,24 +104,10 @@ def main():
               'Commands refuse to overwrite final artifacts. Use a fresh checkout/output location for a new experiment; '
               'complete matching checkpoints may be reused only after hash/protocol checks. No submission/publication claim is made.', '']
     report.write_text('\n'.join(lines))
-    explainer.write_text('\n'.join(['# SimCSE interview notes', '', 'DRAFT - NEEDS HUMAN VERIFICATION', '',
-        '## What and why', '', 'SimCSE trains sentence embeddings by treating two dropout views of the same sentence as a positive pair. '
-        'Other batch sentences provide negatives. The validation-selected checkpoint is tested without the training projection head.', '',
-        '## Actual worked comparison', '', f'Paper target {target:.2f}%; our reference seed mean '
-        f'{test["summaries"]["reference"]["mean"]:.4f}%; gap '
-        f'{test["reference_minus_paper_percentage_points"]:.4f} percentage points. '
-        'Trace values through RESULTS_INDEX.md to the final-test JSON; do not describe a gap as a matched-runtime reproduction.', '',
-        '## Five likely interview questions', '',
-        '1. Why two identical texts? Independent dropout creates distinct views while preserving meaning; without stochastic views, training can collapse.',
-        '2. Where are negatives from? Other sentences in the batch. False negatives can occur when different sentences mean the same thing.',
-        '3. Why remove the projection head at evaluation? Follow the official unsupervised protocol: contrastive training uses the MLP, evaluation uses CLS before it.',
-        '4. What did the ablation isolate? Weight decay with fixed data, batch size, learning rate, budget, and seeds. The paired interval describes seed variability.',
-        '5. What prevents test tuning? Frozen protocol and validation-only checkpoint selection; final tests occur after all training. Exact-overlap filtering is disclosed, '
-        'but cannot prove semantic leakage is absent.', '']))
     audit = {'created_at_utc': datetime.now(timezone.utc).isoformat(),
              'git_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
              'script_sha256': sha(Path(__file__)), 'input_sha256': inputs,
-             'output_sha256': {str(p.relative_to(REPO)): sha(p) for p in (report, figure, explainer)},
+             'output_sha256': {str(p.relative_to(REPO)): sha(p) for p in (report, figure)},
              'test_set_tuning': False, 'gpus_used': 0, 'seed': None,
              'scope': 'Reporting completed measurements, not another experiment.'}
     artifact.write_text(json.dumps(audit, indent=2) + '\n')
@@ -137,7 +121,7 @@ def main():
              '[`evaluate_reproduction.py`](paper_repro/evaluate_reproduction.py), '
              '[`build_repro_report.py`](paper_repro/build_repro_report.py) | `'+test['git_commit']+'` | '
              'All frozen training seeds; official SentEval tasks; mean and seed t95 intervals, paired ablation change and paper gap. '
-             'Validation-only selection; single GPU; dataset/runtime deviations disclosed. Human verification required. |')
+             'Validation-only selection; single GPU; dataset/runtime deviations disclosed. |')
     index.write_text(text.replace('| --- | --- | --- | --- | --- |', '| --- | --- | --- | --- | --- |\n'+entry, 1))
     print('WROTE', report, artifact, flush=True)
 

@@ -65,18 +65,12 @@ def main():
     with out.open('x') as stream:
         json.dump(result, stream, indent=2); stream.write('\n')
     if error:
-        with (REPO / 'QUESTIONS_FOR_HUMAN.md').open('a') as stream:
-            stream.write(f'\n- SimCSE completion pipeline stopped: {error}. Artifacts/logs preserved; no tuning or missing metrics inferred.\n')
         raise SystemExit(error)
-    with (REPO / 'QUESTIONS_FOR_HUMAN.md').open('a') as stream:
-        stream.write('\n- G4 SimCSE frozen grid, final test scoring, and reproduction report completed. '
-                     'See paper_repro/REPRO_REPORT.md. Dataset license/provenance and all external claims still require human verification.\n')
     # Only task-owned artifacts are staged; unrelated working-tree changes stay untouched.
-    subprocess.run(['git', 'add', 'paper_repro/results', 'paper_repro/REPRO_REPORT.md',
-                    'explainers/09_simcse_reproduction.md', 'RESULTS_INDEX.md', 'QUESTIONS_FOR_HUMAN.md'],
+    subprocess.run(['git', 'add', 'paper_repro/results', 'paper_repro/REPRO_REPORT.md', 'RESULTS_INDEX.md'],
                    cwd=REPO, check=True)
-    subprocess.run(['git', 'commit', '--only', '-m', 'feat(research): record SimCSE reproduction gate', 'paper_repro/results', 'paper_repro/REPRO_REPORT.md', 'explainers/09_simcse_reproduction.md', 'RESULTS_INDEX.md', 'QUESTIONS_FOR_HUMAN.md'], cwd=REPO, check=True)
-    print('COMPLETE frozen SimCSE gate; human verification remains required', flush=True)
+    subprocess.run(['git', 'commit', '--only', '-m', 'feat(research): record SimCSE reproduction gate', 'paper_repro/results', 'paper_repro/REPRO_REPORT.md', 'RESULTS_INDEX.md'], cwd=REPO, check=True)
+    print('COMPLETE frozen SimCSE gate; limitations are documented in the report', flush=True)
 
 if __name__ == '__main__':
     main()

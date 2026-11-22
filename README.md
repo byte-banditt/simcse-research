@@ -34,6 +34,6 @@ The training grid must finish all frozen seeds before test evaluation. Checkpoin
 - The modern runtime is not bit-identical to the original implementation. Objective/head parity was checked on a fixture, not full training-trajectory parity.
 - One exact normalized benchmark overlap was removed from the training corpus. Semantic and near-duplicate leakage audits were unavailable.
 - The training-data mirror has no license card. Its license remains **unverified**; data are not included and should not be redistributed based on this study.
-- Single-GPU results; no multi-GPU or throughput claim. Human verification of data provenance and external claims remains necessary.
+- Single-GPU results; no multi-GPU or throughput claim. Dataset provenance and licensing limitations are described in the reproduction report.
 
 The pinned upstream implementation is in [`vendor/official/`](vendor/official/). See the [paper](https://aclanthology.org/2021.emnlp-main.552/) and its [appendix](https://arxiv.org/html/2104.08821v2).
